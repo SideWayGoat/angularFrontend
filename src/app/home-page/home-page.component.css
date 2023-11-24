@@ -1,0 +1,62 @@
+body{
+    background-color: #efefef;
+    padding: 0;
+    margin:0;
+    border:0;
+}
+.outer-container h1{
+    margin: 0;
+    padding: .5em;
+    padding-bottom: 0;
+    border: 0;
+    
+}
+.container{
+    min-height: 100vh;
+}
+.box{
+    background-color: white;
+    padding: .5em;
+    margin: 1em;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: .4em;
+}
+.box h5{
+    margin: .5em;
+}
+.box h2{
+    font-size: smaller;
+}
+.dates{
+    display: flex;
+    justify-content: space-between;
+}
+.dates p{
+    margin: .4em;
+}
+.fat-text{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bolder;
+}
+.fat-text p{
+    font-size: xx-large;
+    margin: .25em;
+}
+button{
+    border-radius: 5em;
+    font-weight: bold;
+    border: 0;
+    margin: 0;
+    padding: 1em;
+    background-color: orangered;
+    color: white;
+}
+.settings{
+    background-color: gray;
+}
+.settings p{
+    margin: .2em;
+}

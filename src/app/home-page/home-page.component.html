@@ -1,0 +1,63 @@
+<body>
+    <div class="outer-container">
+      <h1><i class="fa-solid fa-house"></i>   Gödestadsvägen...</h1>
+      <div class="container">
+        <div class="box">
+          <h2><i class="fa-solid fa-question" style="color: #ff8000;"></i>    vad är viktigt för dig?<hr></h2>
+        <h5>vi vill veta mer om dina åsikter om elsparande</h5>
+        <button>sätt igång</button>
+      </div>
+      <div class="box">
+        <h2><i class="fa-solid fa-bolt" style="color: #ffff00;"></i>    ELANVÄNDING<hr></h2>
+        <div class="dates">
+          <p>November 2023</p>
+          <p>Nov 2022</p>
+        </div>
+        <div class="fat-text">
+          <p>120 kWh</p>
+          <p>193 kWh</p>
+        </div>
+        <p>prognos 164 kWh</p>
+      </div>
+      <div class="box">
+        <h2><i class="fa-solid fa-wallet" style="color: #00ff00;"></i>    KOSTNAD<hr></h2>
+        <div class="dates">
+          <p>Prognos November</p>
+          <p>Nov 2022</p>
+        </div>
+        <div class="fat-text">
+          <p>147 kr</p>
+          <p>249 kr</p>
+        </div>
+      </div>
+      <div class="box">
+        <h2><i class="fa-regular fa-circle" style="color: #8000ff;"></i>    ELPRIS<hr></h2>
+        <div class="dates">
+          <p>Just nu</p>
+          <p>Elområde SE3</p>
+        </div>
+        <div class="fat-text">
+          <p>43 öre/kWh</p>
+        </div>
+        <p>snittpris: 30 öre/kWh</p>
+      </div>
+      <div class="box" routerLink="/RealTimeData">
+        <h2 ><i class="fa-regular fa-clock" style="color: #0080ff;"></i>   REALTIDSMÄTARE<hr></h2>
+        <div class="dates">
+          <!-- sätt in vad vi vill visa med liten text här t.ex just nu -->
+          <p>Din förbrukning</p> <!--LEFT-->
+          <!-- <p>placeholder</p> RIGHT -->
+        </div>
+        <div class="fat-text">
+          <!-- sätt inte text här för stor text -->
+          <p>{{maxKwh}} kW/h</p>
+          <!-- <p>HOLDER</p> -->
+        </div>
+        <!-- vill du ha extra text som vissa har under den feta texten lägg den här  -->
+      </div>
+      <div class="box settings">
+        <p><i class="fa-solid fa-gear"></i>   Inställningar</p>
+      </div>
+  </div>
+  </div>
+  </body>

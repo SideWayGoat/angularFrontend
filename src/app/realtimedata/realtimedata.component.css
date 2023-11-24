@@ -1,0 +1,80 @@
+body{
+    background-color: #efefef;
+    padding: 0;
+    margin:0;
+    border:0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    text-align: center;
+}
+.header h1{
+    padding: .3em;
+    margin: 0;
+}
+.box{
+    background-color: white;
+    padding: .5em;
+    margin: 1em;
+    margin-bottom: 0;
+    display: flex;
+    border-radius: .4em;
+    justify-content: space-evenly;
+}
+.inner-container{
+    text-align: center;
+    width: 100%;
+}
+.fas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+button{
+    width: 30%;
+    border-radius: 5em;
+    font-weight: bold;
+    border: 0;
+    margin: 0;
+    padding: 1em;
+    background-color: orangered;
+    color: white;
+}
+.graph{
+    /*Some CSS just to represent the area that the graph will take*/
+    justify-self: center;
+    height: fit-content;
+    width: 80dvw;
+}
+.button-style{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.button-style button{
+    margin: 0.1em;
+    padding: .2em;
+    border-radius: 0;
+    width: 100%;
+    background-color: orange;
+}
+#firstButton{
+    border-bottom-left-radius: 5em;
+    border-top-left-radius: 5em;
+}
+#secondButton{
+    border-bottom-right-radius: 5em;
+    border-top-right-radius: 5em;
+}
+#noTop{
+    margin-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+#noBot{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}

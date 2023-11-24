@@ -1,0 +1,46 @@
+<body>
+
+    <div class="container">
+        <div class="header" routerLink="/Home">
+            <h1><i class="fa-solid fa-arrow-left"></i>              {{title}}</h1>
+        </div>
+        <div class="box" >
+            <div class="inner-container">
+                <!--Lägg till variable {{kWhMAX}} eller något liknande-->
+                <h2>TOTAL: {{KwH}} kW/h</h2>
+                <div class="fas">
+                    <!--Lägg till variabler för FAS1,2,3 så dem faktiskt visar något kankse? {{FAS1}}-->
+                    <button>{{KwHP1}}</button>
+                    <button>{{KwHP2}}</button>
+                    <button>{{KwHP3}}</button>
+                </div>
+            </div>
+        </div>
+        <div class="box" id="noBot">
+            <div class="graph">
+                <!--Lägg till en fin graph här-->
+                <canvasjs-chart [options]="chartOptions" (chartInstance)="getChartInstance($event)"></canvasjs-chart>
+            </div>
+        </div>
+        <div class="box" id="noTop">
+            <!--Shh detta är fejk knappar klaga inte-->
+            <div class="button-style">
+                <button id="firstButton">Timme</button>
+                <button>Dag</button>
+                <button id="secondButton">Vecka</button>
+            </div>
+        </div>
+        <div class="box">
+            <!--Implementera så man kan välja en gräns på sin KwH-->
+            <input type="text" [(ngModel)]="inputKwH" value="{{inputKwH}}" placeholder="Sätt max kW/h">
+            <button type="submit" (click)="setMaxKwH(inputKwH)">SUBMIT</button>
+        </div>
+        <div class="box">
+            <button style="background-color: green;">Lägst 2kWh</button>
+            <button style="background-color: red;">Högst 6 kWh</button>
+        </div>
+        <div class="box">
+            <p>Maybe some more info here idk</p>
+        </div>
+    </div>
+</body>
